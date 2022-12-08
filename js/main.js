@@ -36,16 +36,16 @@ const loop = document.querySelector(".loop");
 
 for (let i = 0; i < 57; i++) {
   if (i < 10) {
-    appear.innerHTML += `<img src="/images/appear/appear_0000${i}.png" />`;
+    appear.innerHTML += `<img src="images/appear/appear_0000${i}.png" />`;
   } else {
-    appear.innerHTML += `<img src="/images/appear/appear_000${i}.png" />`;
+    appear.innerHTML += `<img src="images/appear/appear_000${i}.png" />`;
   }
 }
 for (let i = 0; i < 82; i++) {
   if (i < 10) {
-    loop.innerHTML += `<img src="/images/loop/loop_0000${i}.png" />`;
+    loop.innerHTML += `<img src="images/loop/loop_0000${i}.png" />`;
   } else {
-    loop.innerHTML += `<img src="/images/loop/loop_000${i}.png" />`;
+    loop.innerHTML += `<img src="images/loop/loop_000${i}.png" />`;
   }
 }
 
