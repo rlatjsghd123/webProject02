@@ -36,16 +36,16 @@ const loop = document.querySelector(".loop");
 
 for (let i = 0; i < 57; i++) {
   if (i < 10) {
-    appear.innerHTML += `<img src="../images/appear/appear_0000${i}.png" />`;
+    appear.innerHTML += `<img src="/images/appear/appear_0000${i}.png" />`;
   } else {
-    appear.innerHTML += `<img src="../images/appear/appear_000${i}.png" />`;
+    appear.innerHTML += `<img src="/images/appear/appear_000${i}.png" />`;
   }
 }
 for (let i = 0; i < 82; i++) {
   if (i < 10) {
-    loop.innerHTML += `<img src="../images/loop/loop_0000${i}.png" />`;
+    loop.innerHTML += `<img src="/images/loop/loop_0000${i}.png" />`;
   } else {
-    loop.innerHTML += `<img src="../images/loop/loop_000${i}.png" />`;
+    loop.innerHTML += `<img src="/images/loop/loop_000${i}.png" />`;
   }
 }
 
@@ -413,6 +413,21 @@ mobBtnClose.addEventListener("click",(e)=>{
    mobBtnClose.classList.remove("on");
 })
 
+// 모바일 서브메뉴 클릭시
+const Cs = document.querySelector(".mob_top_menu>dd>.cs");
+const CsList =  document.querySelector(".mob_top_menu>dd>ul");
+const Clicks = document.querySelectorAll(".clicks");
+const mobGnbList = document.querySelectorAll(".mob_gnb>li>ul")
 
+Cs.addEventListener("click",(e)=>{
+  e.preventDefault();
+  CsList.classList.toggle("on");
+})
+for(let i=0; i<Clicks.length; i++){
+    Clicks[i].addEventListener("click",(e)=>{
+      e.preventDefault();
+      e.currentTarget.parentElement.children[1].classList.toggle("on")
+    })
+}
 
 

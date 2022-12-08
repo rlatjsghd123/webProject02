@@ -162,7 +162,43 @@ a{
         top: 15px;
         left: 10px;
     }
+    .mob_top_menu{
+        background-color: #eaeaea;
+    }
+    .mob_top_menu >dd:nth-child(6)>a{
+        border-top: 3px dotted #999;
+        border-bottom: 3px dotted #999;
+        position: relative;
+        padding: 18px 20px 18px 30px;
+        line-height: 24px;
+    }
+    .mob_top_menu >dd:nth-child(6)>ul{
+        display: none;
+        background-color: #dadada;
+    }
+    .mob_top_menu >dd:nth-child(6)>ul.on{
+        display: block;
+        background-color: #dadada;
+    }
+    .mob_top_menu >dd:nth-child(6)>ul>li>a{
+        display: block;
+        padding: 0 30px;
+        color: #555;
+        font-size: 16px;
+        line-height: 42px;
+    }
+    .mob_top_menu >dd:nth-child(6)>a>i{
+        position: absolute;
+        right: 20px;
 
+    }
+    .mob_top_menu >dd>a{
+        display: block;
+        padding: 0 30px;
+        line-height: 42px;
+        font-size: 16px;
+        color: #555;
+    }
     /* 닫기 */
     .mob_btn_close{
         z-index: 100;
@@ -207,6 +243,52 @@ a{
         color: #fff;
         background: #222;
     }
+    .mob > .mob_gnb{
+        width: 100%;
+    }
+    .mob > .mob_gnb >ul {
+        width: 100%;
+    }
+    .mob > .mob_gnb>ul>li{
+        border-bottom: 2px solid #eaeaea;
+    }
+    .mob > .mob_gnb>ul>li:hover>a{
+        color: #f4790b;
+    }
+    .mob > .mob_gnb>ul>li>ul{
+        background-color:  #eaeaea;
+        display: none;
+    }
+    .mob > .mob_gnb>ul>li>ul.on{
+        display: block;
+    }
+    .mob > .mob_gnb>ul>li>ul>li>a{
+        display: block;
+        padding: 0 30px;
+        line-height: 42px;
+        color: #555;
+        font-size: 16px;
+    }
+    .mob > .mob_gnb>ul>li>ul>li:hover>a{
+        text-decoration: underline;
+        color: #f4790b;
+    }
+    .mob >.mob_gnb >ul>li>a{
+        position: relative;
+        display: block;
+        color: #222;
+        padding: 15px 20px 0;
+        min-height: 41px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .mob >.mob_gnb >ul>li>a>i{
+        position: absolute;
+        right: 20px;
+        font-size: 16px;
+        color: #555;
+    }
+    .mob > .mob_gnb >ul>li>a
     /* info */
     div.info{
         display: flex;
