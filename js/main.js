@@ -18,11 +18,11 @@ const quickSpan = document.querySelectorAll(".content1 span");
 for (let j = 0; j < quickSpan.length; j++) {
   for (let i = 0; i < 20; i++) {
     if (i < 10) {
-      quickSpan[j].innerHTML += `<img src="../images/quick0${j + 1}/quick0${
+      quickSpan[j].innerHTML += `<img src="images/quick0${j + 1}/quick0${
         j + 1
       }_0000${i}.png" />`;
     } else {
-      quickSpan[j].innerHTML += `<img src="../images/quick0${j + 1}/quick0${
+      quickSpan[j].innerHTML += `<img src="images/quick0${j + 1}/quick0${
         j + 1
       }_000${i}.png" />`;
     }
